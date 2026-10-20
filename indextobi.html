@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09090f">
+  <title>XTOBI — Everything in One Place</title>
+  <meta name="description" content="Welcome to XTOBI, your all-in-one digital hub for tools, anime and technology.">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #09090f;
+      color: #f5f5ff;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 22px 7%;
+      border-bottom: 1px solid #252536;
+    }
+    .logo { font-size: 27px; font-weight: 900; letter-spacing: 3px; }
+    .logo span { color: #a78bfa; }
+    .tag { color: #b4b4c8; font-size: 12px; }
+    .hero {
+      text-align: center;
+      padding: 90px 20px 65px;
+      background: radial-gradient(ellipse at top, #282052 0%, #09090f 68%);
+    }
+    .pill {
+      display: inline-block;
+      border: 1px solid #55438b;
+      color: #c4b5fd;
+      padding: 8px 14px;
+      border-radius: 30px;
+      font-size: 12px;
+    }
+    h1 { font-size: clamp(42px, 10vw, 72px); margin: 24px 0 14px; }
+    h1 span {
+      background: linear-gradient(90deg, #a78bfa, #67e8f9);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .hero p { color: #b4b4c8; line-height: 1.8; max-width: 480px; margin: 0 auto 28px; }
+    .button {
+      display: inline-block;
+      background: #a78bfa;
+      color: #09090f;
+      padding: 14px 22px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 800;
+    }
+    main { max-width: 1050px; margin: auto; padding: 30px 20px 70px; }
+    .section-title { font-size: 25px; margin: 25px 0 8px; }
+    .sub { color: #a4a4b8; margin-bottom: 24px; font-size: 14px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .card {
+      background: #13131f;
+      border: 1px solid #29293d;
+      border-radius: 18px;
+      padding: 24px;
+      transition: transform .2s, border-color .2s;
+    }
+    .card:hover { transform: translateY(-4px); border-color: #8b5cf6; }
+    .emoji { font-size: 30px; }
+    .card h3 { margin: 16px 0 8px; }
+    .card p { color: #a4a4b8; line-height: 1.6; font-size: 14px; }
+    .card a { color: #c4b5fd; text-decoration: none; font-weight: 700; }
+    .about {
+      margin-top: 40px;
+      padding: 28px;
+      background: #13131f;
+      border-radius: 18px;
+      border: 1px solid #29293d;
+    }
+    footer { text-align: center; padding: 25px; color: #85859c; border-top: 1px solid #252536; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">XTO<span>BI</span></div>
+    <div class="tag">YOUR DIGITAL WORLD</div>
+  </header>
+
+  <section class="hero">
+    <div class="pill">✦ YOUR ALL-IN-ONE HUB</div>
+    <h1>Welcome to <span>XTOBI</span></h1>
+    <p>One destination. Endless possibilities. Explore tools, anime, technology and more — all in one place.</p>
+    <a class="button" href="#explore">Explore XTOBI ↗</a>
+  </section>
+
+  <main id="explore">
+    <h2 class="section-title">Explore Everything</h2>
+    <p class="sub">Choose a category and discover what's possible.</p>
+
+    <div class="grid">
+      <article class="card">
+        <div class="emoji">🛠️</div>
+        <h3>Online Tools</h3>
+        <p>Discover useful digital tools for your everyday tasks.</p>
+        <a href="#tools">Explore tools ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="emoji">🤖</div>
+        <h3>Telegram Bots</h3>
+        <p>Find bot information, features and project updates.</p>
+        <a href="#bots">Explore bots ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="emoji">🎬</div>
+        <h3>Anime World</h3>
+        <p>Discover anime, explore titles and find your next watch.</p>
+        <a href="#anime">Explore anime ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="emoji">👤</div>
+        <h3>About Me</h3>
+        <p>A personal corner for my profile, projects and updates.</p>
+        <a href="#about">Discover more ↗</a>
+      </article>
+
+      <article class="card" id="tools">
+        <div class="emoji">⚡</div>
+        <h3>Coming Soon</h3>
+        <p>More useful tools and features are on the way.</p>
+        <a href="#about">Stay tuned ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="emoji">🌐</div>
+        <h3>More Projects</h3>
+        <p>XTOBI is growing. This is just the beginning.</p>
+        <a href="#about">Learn more ↗</a>
+      </article>
+    </div>
+
+    <section class="about" id="about">
+      <h2>About XTOBI</h2>
+      <p style="color:#b4b4c8;line-height:1.8">
+        XTOBI is my personal all-in-one digital space.
+        New ideas, projects and features will be added over time.
+      </p>
+    </section>
+    <div id="bots"></div>
+    <div id="anime"></div>
+  </main>
+
+  <footer>© 2026 XTOBI. Built for what's next.</footer>
+</body>
+</html>
